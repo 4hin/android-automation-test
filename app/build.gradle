@@ -20,6 +20,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    signingConfigs {
+        release {
+            keyAlias System.getenv("BITRISEIO_ANDROID_KEYSTORE_ALIAS")
+            keyPassword System.getenv("BITRISEIO_ANDROID_KEYSTORE_PRIVATE_KEY_PASSWORD")
+            storeFile file(System.getenv("HOME") + "/keystores/release.jks") // File Downloaderで指定したパス
+            storePassword System.getenv("BITRISEIO_ANDROID_KEYSTORE_PASSWORD")
+        }
+    }
 }
 
 dependencies {
