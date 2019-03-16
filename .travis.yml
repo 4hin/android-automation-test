@@ -24,11 +24,14 @@ android:
     - extra-google-google_play_services
     - extra-google-m2repository
     - extra-android-m2repository
-d
+
     licenses:
     - 'android-sdk-preview-license-52d11cd2'
     - 'android-sdk-license-.+'
     - 'google-gdk-license-.+'
+
+install:
+   - bundle install
 
 script:
    - ./gradlew assembleDebug
