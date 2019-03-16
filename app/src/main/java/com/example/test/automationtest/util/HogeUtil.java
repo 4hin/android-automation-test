@@ -7,5 +7,6 @@ public class HogeUtil {
         if (arg == 0) {
             return v;
         }
+        return "";
     }
 }
