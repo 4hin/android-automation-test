@@ -15,11 +15,4 @@ script:
    - bundle exec danger
 
 cache:
-    - bundler
-    directories:
-    - $HOME/.gradle/caches/
-    - $HOME/.gradle/wrapper/
-    - $HOME/.android/build-cache
-
-#before_script:
-#    bundle exec danger
+   - bundler
