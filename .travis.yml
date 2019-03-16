@@ -7,8 +7,8 @@ language: android
 #    - master
 #    - develop
 
-before_install:
-    - yes | sudo sdkmanager --licenses
+#before_install:
+#    - yes | sudo sdkmanager --licenses
 
 android:
   components:
@@ -29,6 +29,7 @@ android:
     - extra-android-m2repository
 
   licenses:
+    - android-sdk-license-e6a904e8
     - 'android-sdk-license-.+'
     - 'google-gdk-license-.+'
 
