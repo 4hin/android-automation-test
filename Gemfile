@@ -4,5 +4,6 @@
 source "https://rubygems.org"
 
 gem "danger"
-gem 'danger-android_lint'
-gem 'danger-findbugs'
+#gem 'danger-android_lint'
+gem 'danger-checkstyle_format', '~> 0.0.1'
+#gem 'danger-findbugs'
