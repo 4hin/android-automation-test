@@ -16,7 +16,7 @@ task checkstyle(type: Checkstyle) {
     include '**/*.java'
     reports {
         xml {
-            destination "build/reports/checkstyle.xml"
+            destination "build/reports/checkstyle/checkstyle.xml"
         }
     }
     classpath = files()
