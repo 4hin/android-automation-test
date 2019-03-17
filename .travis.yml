@@ -38,6 +38,7 @@ install:
 
 script:
 #   - ./gradlew assembleDebug
+   - ./gradlew checkstyle
    - bundle exec danger
 
 cache:
